@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    color:red;
+}
+
+#result{
+    text-align: center;
+    color:blue;
+    font-size: 30px;
+}
+
+#player {
+    text-align: center;
+    color:red;
+}
+#computer {
+    text-align: center;
+    color:green;
+}
+.c {
+    text-align: center;
+}
+
+.mainimg {
+    text-align: center;
+}
+
+.image{
+    height: 170px;
+    width: 220px;
+}

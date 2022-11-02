@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけん</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>>
+
+<body bgcolor="pink">
+
+    <h1>サザエさんとじゃんけんしよう！</h1>
+
+    <div class="mainimg">
+        <img src = "img/base.jpeg" width = "500px" height = "300px">
+    </div>
+       
+    <p class="c">下のボタンからひとつ選んでね</p>
+    
+    <div class="mainimg">
+        <button onclick="R_Click(0);"><img class="image" src="img/rock.jpeg" alt="rock"></button>  
+        <button onclick="R_Click(1);"><img class="image" src="img/paper.jpeg" alt="paper"></button>
+        <button onclick="R_Click(2);"><img class="image" src="img/scissors.jpeg" alt="scissors"></button>
+    </div>
+
+    <p id="player"></p>
+    <p id="computer"></p>
+    <p id="result">ジャンケン...</p>
+    
+<script src="js/test.js"></script>    
+</body>
+</html>
