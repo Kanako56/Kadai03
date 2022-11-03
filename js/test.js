@@ -1,13 +1,22 @@
 // alert(1111); コメントアウト
 
 console.log("じゃんけんアプリ");
+var vid = $("#sazaevideo")
+const url = "https://www.youtube.com/embed/mo_G0GhsniU" 
 
-function R_Click(player) {
+$(document).ready(function(){
+    vid.attr("src", url)
+})
+
+function play(player) {
     //var player = ['グー','チョキ','パー'];
     var random = Math.floor(Math.random()*3);
 
     var playerText=getText(player);
     var computerText=getText(random);
+    var computerImageFile=getImage(random);
+    $("#computerImage").attr("src", computerImageFile)
+    $("#computerImage").show()
 
     if (random === player) {
         console.log("あいこ");
@@ -33,6 +42,13 @@ function R_Click(player) {
     $("#computer").text("サザエさん： " + computerText);
 }
 
+function R_Click(player) {
+    var newUrl = url+"?autoplay=1&end=4"
+    vid.attr("src", newUrl)
+    setTimeout(function(){
+        play(player)
+    }, 5000)
+}
 function getText(number) {
     if(number===0){
         return "グー";
@@ -44,8 +60,30 @@ function getText(number) {
         return "チョキ";
     }
 }
+
+function getImage(number) {
+    if(number===0){
+        return "img/rock.jpeg";
+    }
+    if(number===1){
+        return "img/paper.jpeg";
+    }
+    if(number===2){
+        return "img/scissors.jpeg";
+    }
+}
     
-  
+function video_play() {
+   video.play();
+}
+
+
+
+
+
+
+
+
 
 
 

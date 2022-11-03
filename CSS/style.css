@@ -1,6 +1,8 @@
 h1 {
     text-align: center;
     color:red;
+    font-family:"Comic San MS"
+
 }
 
 #result{
@@ -28,4 +30,9 @@ h1 {
 .image{
     height: 170px;
     width: 220px;
+}
+
+.centerDiv{
+    display: flex;
+    justify-content: center;
 }
