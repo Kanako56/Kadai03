@@ -36,3 +36,7 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+.haru{
+    display: none;
+}
