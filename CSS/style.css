@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     color:red;
-    font-family:"Comic San MS"
+    font-family:"arial black"
 
 }
 
@@ -35,4 +35,8 @@ h1 {
 .centerDiv{
     display: flex;
     justify-content: center;
+}
+
+.haru{
+    display: none;
 }
